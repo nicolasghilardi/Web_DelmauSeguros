@@ -1,0 +1,20 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --principal-color: #57E1F4;
+    --secundary-color: #91F0FA;
+    --lg: 18px;
+    --md: 16px;
+    --sm: 14px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
