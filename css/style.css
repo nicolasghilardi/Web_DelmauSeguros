@@ -53,10 +53,24 @@ ul{
     width: 90%;
     margin: auto;
     text-align: center;
-    color: var(--black);
+    
 }
 .c1 h1{
-    font-size: 4rem;
-    color: var(--black);
+    font-size: 5rem;
+    color: var(--white);
+    text-shadow: -1px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
     font-weight: bold;
+}
+.c1 h3{
+    font-size: 2rem;
+    color: var(--white);
+    text-shadow: -1px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+    font-weight: bold;
+}
+.c2{
+    width: 100vw;
+    height: 20vh;
+    background-color: var(--principal-color);
+    text-align: center;
+    margin: auto;
 }
