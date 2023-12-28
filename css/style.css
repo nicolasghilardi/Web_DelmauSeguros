@@ -27,6 +27,17 @@ html{
     background-color:var(--white);
     border-bottom: solid 3px var(--principal-color);
 }
+.menu-list {
+    display: none;
+}
+.menu-button {
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+    margin-right: 4px ;
+    display: block;
+    
+}
 .logo{
     margin: auto;
     width: 30px;
@@ -34,7 +45,7 @@ html{
 
 }
 ul{
-    display: none;
+    display:none;
 }
 .container{
     width: 100vw;
@@ -55,15 +66,26 @@ ul{
     width: 100%;
 }
 
-.c1 h1{
+ .c1 h1{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--white);
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* background-color: rgba(0, 0, 0, 0.5);  */
     padding: 10px 20px;
 }
+
+/* .c1 h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    /* background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    
+} */
 /* .c1 div{
     width: 90%;
     margin: auto;
