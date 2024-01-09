@@ -50,16 +50,16 @@ ul{
     display:none;
 }
 .container{
-    width: 100vw;
     flex-wrap: wrap;
 }
  .c1 {
-    position: relative;
+    width: 100vw;
     height: 100vh;
+    position: relative;    
     overflow: hidden;
  }
  .imagen_c1 {
-    width: 800px;
+    width: 100%;
     height: auto;
     margin-top: 40px;
     object-fit: cover;
