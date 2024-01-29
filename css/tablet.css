@@ -1,0 +1,10 @@
+.c3-service-container{
+    display: grid;
+    margin: auto;
+    justify-items: center;
+    grid-template-columns: repeat(2, 240px);
+    margin-bottom: 20px;
+}
+.contacto{
+max-width: 500px;
+}

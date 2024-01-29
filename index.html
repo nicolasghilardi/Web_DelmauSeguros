@@ -10,11 +10,14 @@
     <stript src="./js/script.js" defer></stript>
     <title>Delmau Seguros</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 800px)">
 </head>
 <body>
     <header class="menu-header">
-        <img src="./assett/images/Logo1.2.svg" alt="logo" class="logo">
-        <button class="menu-button" id="menuButton">&#9776;</button>
+        <a href="index.html">
+        <img src="./assett/images/Logo1.2.svg" alt="logo" class="logo"></a>
+        <!-- <button class="menu-button" id="menuButton">&#9776;</button> -->
 
         <ul class="menu-list" id="menuList">
             <li><a href="#">Quienes Somos?</a></li>
@@ -54,10 +57,66 @@
                     <div class="service-info">
                         <div>
                             <h2>Seguro de Vehículo</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit laboriosam iste repellendus laudantium veritatis, adipisci pariatur</p>
+                            <p>Conduce con confianza sabiendo que tu vehículo esta protegido por nuestro seguro para autos. Ofrecemos coberturas adaptadas a tus necesidades, precios competitivos y un servicio excepcional para brindarte la tranquilidad que mereces en cada viaje.</p>
                         </div>
                         <figure>
-                            <a href="#">
+                            <a href="#form-contact">
+                            <img src="./assett/iconos/boton-mas.png" alt="">
+                            </a>
+                          </figure>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="./assett/images/service-moto.jpg" alt="auto" class="service-img">
+                    <div class="service-info">
+                        <div>
+                            <h2>Seguro de Motos</h2>
+                            <p>Explora las rutas con seguridad gracias a nuestro seguro para motos. Diseñado para los motociclistas, te ofrecemos coberturas personalizadas, tarifas atractivas y un compromiso total con tu bienestar en cada aventura.</p>
+                        </div>
+                        <figure>
+                            <a href="#form-contact">
+                            <img src="./assett/iconos/boton-mas.png" alt="">
+                            </a>
+                          </figure>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="./assett/images/service-bicicleta.jpg" alt="auto" class="service-img">
+                    <div class="service-info">
+                        <div>
+                            <h2>Seguro de Biciletas</h2>
+                            <p>Pedalea con tranquilidad sabiendo que tu bicicleta esta protegida. Nuestro seguro para bicicletas te ofrece la cobertura que necesitas, con tarifas accesibles comprometido a brindarte el respaldo necesario para disfrutar de cada paseo.</p>
+                        </div>
+                        <figure>
+                            <a href="#form-contact">
+                            <img src="./assett/iconos/boton-mas.png" alt="">
+                            </a>
+                          </figure>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="./assett/images/service-casa.jpg" alt="auto" class="service-img">
+                    <div class="service-info">
+                        <div>
+                            <h2>Seguro de Casa</h2>
+                            <p>Tu Hogar es tu refugio, y nuestro seguro para casas está diseñado para protegerlo. Ofrecemos coberturas completas, precios competitivos y un servicio postventa de calidad. Confía en nosotros para resguardar tu espacio y brindarte la seguridad que tu hogar merece.</p>
+                        </div>
+                        <figure>
+                            <a href="#form-contact">
+                            <img src="./assett/iconos/boton-mas.png" alt="">
+                            </a>
+                          </figure>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="./assett/images/service-comercio.jpg" alt="auto" class="service-img">
+                    <div class="service-info">
+                        <div>
+                            <h2>Seguro de Comercio</h2>
+                            <p>Protege tu negocio con nuestro seguro especializado para comercios. Adaptamos nuestras coberturas a las necesidades de tu empresa, ofrecemos tarifas competitivas y un servicio centrado en tu tranquilidad. Estamos aquí para respaldar tu éxito y proteger tus activos comerciales.</p>
+                        </div>
+                        <figure>
+                            <a href="#form-contact">
                             <img src="./assett/iconos/boton-mas.png" alt="">
                             </a>
                           </figure>
@@ -65,7 +124,36 @@
                 </div>
             </div>
         </div>
+        <div class="c4" id="form-contact">
+            <div>
+                <h1 class="title-contacto">Contacto</h1>
+                <p>Escribinos y te enviamos cotización de tu seguro, sin cargo!!</p>
+            </div>
+            <div class="contacto">
+                <form action="contacto.php" method="post" class="form-contact">
+                    <label for="name">Nombre y Apellido</label>
+                    <input type="text" name="name" placeholder="Coloque su Nombre y Apellido" pattern=[A-Z\sa-z]{3,20} required=""/>
+
+                    <label for="email">Correo Electronico</label>
+                    <input type="text" name="email" placeholder="Coloque correo electronico" pattern=[A-Z\sa-z]{3,20} required=""/>
+
+                    <label for="phone">Telefono</label>
+                    <input type="text" name="phone" placeholder="Coloque su número de telefono" pattern=[A-Z\sa-z]{3,20} required=""/>
+
+                    <label for="message">Mensaje</label>
+                    <textarea type="text" name="message" id="message" cols="300" rows="10"></textarea>
+                    <input type="submit" value="Enviar" class="boton-enviar">
+                </form>
+            </div>
+
+        </div>
     </main>
-    <footer></footer>
+    <footer class="page-footer">
+        <p class="direction"></p>
+      <ul class="copyright">
+        <li>&copy; Untitled. All rights reserved.</li>
+        <li>Design: <a href="www.nicolasghilardi.com.ar">Nicolás Ghilardi</a></li>
+      </ul>
+    </footer>
 </body>
 </html>
